@@ -1,36 +1,57 @@
 .btn-outline-danger {
-  color: #f5584b;
-  border-color: #f5584b;
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1,
+    transparent,
+    400,
+    none
+  );
+  border-color: $btn--color-primary_1;
   border-radius: 30px;
   width: 123px;
   height: 30px;
   margin-top: 30px;
-  font-size: 12px;
 }
 
 .btn-outline-danger:hover {
-  background-color: #f5584b;
-  color: #fff;
-  border-color: #f5584b;
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    $btn--color-primary_1,
+    400,
+    2px 1px 2px 0px rgba(251, 131, 85, 0.4)
+  );
+  border-color: $btn--color-primary_1;
 }
 
 .btn-danger {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 87, 75, 1) 0%,
-    rgba(250, 121, 83, 1) 49%,
-    rgba(255, 158, 92, 1) 100%
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_1--hover,
+    linear-gradient(
+      90deg,
+      rgba(245, 87, 75, 1) 0%,
+      rgba(250, 121, 83, 1) 49%,
+      rgba(255, 158, 92, 1) 100%
+    ),
+    400,
+    none
   );
-  border-color: #f5584b;
+  border-color: $btn--color-primary_1;
   border-radius: 30px;
   width: 198px;
   height: 50px;
-  font-size: 12px;
 }
-.btn-danger:hover{
-    background: transparent;
-    color:#212121;
-    box-shadow: 0px 8px 10px 0px rgba(251, 131, 85, 0.4);
+.btn-danger:hover {
+  @include button(
+    12px,
+    $font-montserrat-reg,
+    $btn--color-primary_2--hover,
+    transparent,
+    400,
+    4px 8px 10px 0px rgba(251, 131, 85, 0.4)
+  );
 }
-
-  
