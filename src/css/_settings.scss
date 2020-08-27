@@ -1,0 +1,95 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select,
+a {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Заголовки
+h1 {
+  @include font(42px, $font-montserrat-bold, 900);
+}
+
+h2 {
+  @include font(24px, $font-montserrat-medium, 500);
+}
+
+h3 {
+  @include font(17px, $font-montserrat-reg, 400);
+}
+
+// Параграфи
+.white-background {
+  @include font(12px, $font-opensans-reg, $font--color-primary_2, 400);
+  line-height: 28px;
+}
+
+.another-background {
+  @include font(13px, $font-opensans-reg, $standart--color__1, 400);
+  line-height: 28px;
+  text-align: center;
+}
+
+// Лінки
+.menu {
+  a {
+    @include font(14px, $bgc--color-primary_1, $font-montserrat-reg, 400);
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    @include font(18px, $bgc--color-primary_2, $font-montserrat-semibold, 600);
+    padding: 9px 20px 8px 20px;
+    text-decoration: none;
+
+  }
+}
+
+.link-footer {
+  a {
+    @include font(14px, $bgc--color-primary_1, $font-montserrat-reg, 400);
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    @include font(18px, $bgc--color-primary_2, $font-montserrat-semibold, 600);
+    padding: 9px 20px 8px 20px;
+    text-decoration: none;
+
+  }
+}
+
+//Логін
+.login {
+  a {
+    @include font(14px, $bgc--color-primary_1, $font-montserrat-reg, 400);
+    text-decoration: none;
+
+  }
+
+  a:hover {
+    @include font(18px, $bgc--color-primary_1, $font-montserrat-reg, 600);
+    text-decoration: none;
+
+  }
+}
