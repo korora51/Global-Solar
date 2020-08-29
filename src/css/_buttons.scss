@@ -1,6 +1,6 @@
 .btn-outline-danger {
   @include button(
-    12px,
+    10px,
     $font-montserrat-reg,
     $btn--color-primary_1,
     transparent,
@@ -12,11 +12,12 @@
   width: 123px;
   height: 30px;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .btn-outline-danger:hover {
   @include button(
-    12px,
+    10px,
     $font-montserrat-reg,
     $btn--color-primary_1--hover,
     $btn--color-primary_1,

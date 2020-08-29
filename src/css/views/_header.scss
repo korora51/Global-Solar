@@ -17,10 +17,9 @@ body {
   align-items: center;
   text-align: center;
   .name {
+    @include font(48px, $font-montserrat-reg, $font-h1--color-primary, bold);
     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
-    font-size: 48px;
     line-height: 1.25;
-    font-weight: bold;
   }
   hr {
     background: linear-gradient(
@@ -33,7 +32,12 @@ body {
     height: 1px;
   }
   p {
-    font-size: 14px;
+    @include font(
+      14px,
+      $font-montserrat-reg,
+      $font-header-p--color-primary,
+      400
+    );
     line-height: 1.857;
   }
 }
